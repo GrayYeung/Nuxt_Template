@@ -1,0 +1,9 @@
+.cache
+.eslintrc
+.tmp
+tsconfig.json
+**/node_modules/**
+/gen/**
+/server-middleware/gen/**
+/store/**
+/static/sw.js
