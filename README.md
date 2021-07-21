@@ -2,7 +2,7 @@
 This is a Nuxt template project setup with below functions / library:
 - [ ] Nuxt - Composition API
 - [ ] Nuxt - Vuex Store
-- [ ] Typescript
+- [x] Typescript
 - [ ] Tailwindcss
 - [ ] MongoDB
 - [ ] Apollo Graphql Server
