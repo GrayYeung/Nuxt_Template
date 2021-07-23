@@ -1,3 +1,4 @@
+import 'reflect-metadata'
 import { ReturnModelType } from '@typegoose/typegoose/lib/types'
 import { loadSchemaSync } from '@graphql-tools/load'
 import { GraphQLFileLoader } from '@graphql-tools/graphql-file-loader'
