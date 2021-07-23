@@ -13,8 +13,10 @@
     "graphql-watch": "graphql-codegen --watch"
   },
   "dependencies": {
+    "@nuxtjs/apollo": "^4.0.1-rc.5",
     "@nuxtjs/composition-api": "^0.24.4",
     "@typegoose/typegoose": "^7.4.7",
+    "apollo-link": "^1.2.14",
     "core-js": "^3.15.1",
     "graphql": "^15.5.1",
     "koa": "^2.13.1",

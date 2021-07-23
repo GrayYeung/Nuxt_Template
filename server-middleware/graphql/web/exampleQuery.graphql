@@ -1,0 +1,13 @@
+query GetAllExamples {
+  allExamples {
+    ...ExampleFields
+  }
+}
+
+fragment ExampleFields on Example {
+  id
+  name
+  keywords
+  isVerified
+  role
+}

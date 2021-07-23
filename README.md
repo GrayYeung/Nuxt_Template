@@ -6,7 +6,7 @@ This is a Nuxt template project setup with below functions / library:
 - [x] Tailwindcss
 - [x] MongoDB
 - [x] Apollo Graphql Server
-- [ ] Apollo Graphql Client
+- [x] Apollo Graphql Client
 - [ ] Proxy
 - [ ] Vercel (Deployment)
 

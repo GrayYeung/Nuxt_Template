@@ -11,3 +11,25 @@ generates:
         type: 'interface'
         input: 'interface'
 
+  # For frontend
+  ./gen/composition.ts:
+    ## connect to backend
+    #    schema: http://localhost:5000/graphql
+    #    documents: ./server-middleware/graphql/web/**/*.graphql
+    ## not connect to backend
+    schema: ./server-middleware/graphql/**/*.graphql
+    documents: ./server-middleware/graphql/web/**/*.graphql
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-vue-apollo
+    config:
+      skipTypename: true
+      declarationKind:
+        type: 'interface'
+        input: 'interface'
+      withCompositionFunctions: false
+      vueApolloComposableImportFrom: "@vue/apollo-composable/dist"
+      vueCompositionApiImportFrom: "@nuxtjs/composition-api"
+      #withRefetchFn: true
+      #https://www.graphql-code-generator.com/docs/plugins/typescript-vue-apollo#examples

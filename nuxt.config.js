@@ -36,7 +36,24 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['@nuxtjs/apollo'],
+
+  apollo: {
+    tokenName: 'nuxt-apollo', // specify token name
+    cookieAttributes: {
+      expires: 7, // optional, default: 7 (days)
+    },
+    defaultOptions: {
+      $query: {
+        fetchPolicy: 'network-only', // 'no-cache'
+        errorPolicy: 'all',
+      },
+    },
+    clientConfigs: {
+      default: '~/plugins/apollo-config.js',
+      another: '~/plugins/apollo-config-another.js',
+    },
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
