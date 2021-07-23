@@ -9,7 +9,7 @@ This is a Nuxt template project setup with below functions / library:
 - [x] Apollo Graphql Server
 - [x] Apollo Graphql Client
 - [x] Proxy
-- [ ] Vercel (Deployment)
+- [x] Vercel (Deployment)
 
 ---
 ## Dependency Setup
