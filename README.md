@@ -26,6 +26,11 @@ $ yarn graphql
 # create .env (If env file does not exist)
 $ cp .env.example .env
 ```
+
+## Deployment (Vercel)
+1. install `Vercel CLI`
+2. run `vercel` in the project (if need env variable, set at `vercel.json`)
+3. connect to your vercel workspace
 ---
 ## Potential Issue
 ```bash

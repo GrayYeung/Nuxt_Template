@@ -1,0 +1,14 @@
+docker-cache
+.idea
+.env.example
+.eslintignore
+.eslintrc
+.gitignore
+.prettierrc
+codegen.yml
+docker-compose.yml
+docker-compose-fix-mongo-not-master.yml
+fix-mongo-not-master.sh
+tailwindcss.generated.css
+yarn.lock
+

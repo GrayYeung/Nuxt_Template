@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "env": {
+    "NODE_ENV": "production",
+    "PORT": "3000",
+    "GRAPHQL_PORT": "5000",
+    "API_URL": "http://localhost:5000",
+    "API_PATH": "/graphql",
+    "API_ANOTHER_PATH": "/graphql-another",
+    "WEB_PROXY": "/graphql",
+    "WEB_ANOTHER_PROXY": "/graphql-another",
+    "MONGO_DB_URL": "mongodb+srv://someMongodbLink/myFirstDatabase?retryWrites=true&w=majority"
+  },
+  "build": {
+    "env": {
+      "NODE_ENV": "production",
+      "PORT": "3000",
+      "GRAPHQL_PORT": "5000",
+      "API_URL": "http://localhost:5000",
+      "API_PATH": "/graphql",
+      "API_ANOTHER_PATH": "/graphql-another",
+      "WEB_PROXY": "/graphql",
+      "WEB_ANOTHER_PROXY": "/graphql-another",
+      "MONGO_DB_URL": "mongodb+srv://someMongodbLink/myFirstDatabase?retryWrites=true&w=majority"
+    }
+  },
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "nuxt.config.js",
+      "use": "@nuxtjs/vercel-builder",
+      "config": {
+        "serverFiles": [
+          "server-middleware/**"
+        ]
+      }
+    }
+  ]
+}
