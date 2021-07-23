@@ -1,0 +1,7 @@
+#For define User Identity
+
+# type
+type UserResponse {
+  username: String!
+  isAdmin: Boolean!
+}

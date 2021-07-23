@@ -88,3 +88,12 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# Custom
+/yarn.lock
+tailwindcss.generated.css
+/docker-cache/
+/gen/
+/server-middleware/gen/
+/.vercel/
+.vercel

@@ -17,6 +17,9 @@
     "@typegoose/typegoose": "^7.4.7",
     "core-js": "^3.15.1",
     "graphql": "^15.5.1",
+    "koa": "^2.13.1",
+    "koa-graphql": "^0.8.0",
+    "koa-mount": "^4.0.0",
     "mongoose": "^5.12.15",
     "nuxt": "^2.15.7"
   },
@@ -35,6 +38,8 @@
     "@nuxtjs/eslint-config-typescript": "^6.0.1",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/tailwindcss": "^4.2.0",
+    "@types/koa-graphql": "^0.8.4",
+    "@types/koa-mount": "^4.0.0",
     "@types/mongoose": "^5.10.1",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
