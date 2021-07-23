@@ -1,0 +1,13 @@
+generates:
+  # For backend
+  ./server-middleware/gen/types.ts:
+    schema: ./server-middleware/graphql/schema/**/*.graphql
+    plugins:
+      - typescript
+      - typescript-resolvers
+    config:
+      skipTypename: true
+      declarationKind:
+        type: 'interface'
+        input: 'interface'
+

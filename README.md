@@ -18,6 +18,12 @@ $ docker-compose up -d
 
 # install dependencies
 $ yarn
+
+# generate GraphQL
+$ yarn graphql
+
+# create .env (If env file does not exist)
+$ cp .env.example .env
 ```
 ---
 ## Potential Issue
