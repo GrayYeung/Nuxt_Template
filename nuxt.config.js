@@ -49,4 +49,6 @@ export default {
       },
     },
   },
+
+  serverMiddleware: ['~/server-middleware/server.ts'],
 }

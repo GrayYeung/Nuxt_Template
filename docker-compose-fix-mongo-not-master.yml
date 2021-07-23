@@ -1,0 +1,10 @@
+version: '3'
+services:
+  mongo:
+    image: mongo:4.2-bionic
+    container_name: mongo
+    ports:
+      - 27017:27017
+    entrypoint: [ "/usr/bin/mongod", "--bind_ip_all" ]
+    volumes:
+      - ./docker-cache/mongo:/data/db
