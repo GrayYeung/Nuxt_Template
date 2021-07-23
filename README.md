@@ -1,7 +1,7 @@
 # Nuxt Template
 This is a Nuxt template project setup with below functions / library:
 - [x] Nuxt - Composition API
-- [ ] Nuxt - Vuex Store
+- [x] Nuxt - Vuex Store
 - [x] Typescript
 - [x] Tailwindcss
 - [x] MongoDB
