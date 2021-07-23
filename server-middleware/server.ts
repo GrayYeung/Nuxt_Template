@@ -12,6 +12,7 @@ import { initExampleDatabase } from './backend/service/exampleService'
 import { ExampleEntity } from './backend/entities'
 import { Resolvers, UserResponse } from './gen/types'
 import { getOptimisticModel } from './backend/core'
+import { ExampleResolver } from './backend/resovlers'
 
 /** mongodb connection **/
 mongoose.connect(process.env.MONGO_DB_URL ?? '', {
@@ -41,7 +42,7 @@ const schema = loadSchemaSync('./server-middleware/graphql/schema/**/*.graphql',
   // load from a single schema file
   loaders: [new GraphQLFileLoader()],
 })
-const resolversArray: Resolvers<GraphQLContext>[] = []
+const resolversArray: Resolvers<GraphQLContext>[] = [ExampleResolver]
 const resolvers = mergeResolvers(resolversArray as any)
 const schemaWithResolvers = addResolversToSchema({
   schema,

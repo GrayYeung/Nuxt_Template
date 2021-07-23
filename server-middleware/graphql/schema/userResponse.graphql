@@ -1,7 +1,20 @@
 #For define User Identity
 
+extend type Query {
+  allExamples: [Example!]
+}
+
+
 # type
 type UserResponse {
   username: String!
   isAdmin: Boolean!
+}
+
+type Example implements Node {
+  id: ID!
+  name: String!
+  keywords: [String!]
+  isVerified: Boolean!
+  role: Role!
 }
