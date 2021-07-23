@@ -75,4 +75,10 @@ export default {
   },
 
   serverMiddleware: ['~/server-middleware/server.ts'],
+
+  watchers: {
+    webpack: {
+      ignored: [/docker-cache/, /.idea/, /.git/],
+    },
+  },
 }
