@@ -1,6 +1,6 @@
 # Nuxt Template
 This is a Nuxt template project setup with below functions / library:
-- [ ] Nuxt - Composition API
+- [x] Nuxt - Composition API
 - [ ] Nuxt - Vuex Store
 - [x] Typescript
 - [x] Tailwindcss
