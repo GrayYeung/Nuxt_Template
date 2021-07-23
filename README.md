@@ -7,7 +7,7 @@ This is a Nuxt template project setup with below functions / library:
 - [x] MongoDB
 - [x] Apollo Graphql Server
 - [x] Apollo Graphql Client
-- [ ] Proxy
+- [x] Proxy
 - [ ] Vercel (Deployment)
 
 ---

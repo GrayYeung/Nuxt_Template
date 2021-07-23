@@ -36,7 +36,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/apollo'],
+  modules: ['@nuxtjs/apollo', '@nuxtjs/proxy'],
 
   apollo: {
     tokenName: 'nuxt-apollo', // specify token name
@@ -53,6 +53,13 @@ export default {
       default: '~/plugins/apollo-config.js',
       another: '~/plugins/apollo-config-another.js',
     },
+  },
+
+  proxy: {
+    // need proxy if this project is acting as Frontend and Backend at the same time
+    [process.env.WEB_PROXY ?? '/graphql']: process.env.API_URL ?? 'http://localhost:5000', // '/graphql': 'http://localhost:5000',
+    [process.env.WEB_ADMIN_PROXY ?? '/graphql-another']:
+      process.env.API_URL ?? 'http://localhost:5000',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

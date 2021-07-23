@@ -15,6 +15,7 @@
   "dependencies": {
     "@nuxtjs/apollo": "^4.0.1-rc.5",
     "@nuxtjs/composition-api": "^0.24.4",
+    "@nuxtjs/proxy": "^2.1.0",
     "@typegoose/typegoose": "^7.4.7",
     "apollo-link": "^1.2.14",
     "core-js": "^3.15.1",
